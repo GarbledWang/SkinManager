@@ -165,7 +165,7 @@ public class SkinManager {
 
     public Drawable getDrawable(int attrResId) {
         Drawable originDrawable = mContext.getResources().getDrawable(attrResId);
-        if (mResources != null || isDefaultSkin) {
+        if (mResources == null || isDefaultSkin) {
             return originDrawable;
         }
 
